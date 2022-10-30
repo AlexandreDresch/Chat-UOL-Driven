@@ -67,7 +67,7 @@ body {
 
 .mobile-container {
     width: 419px;
-    //height: 900px;
+    height: 900px;
 	background-color: #E5E5E5;
 }
 
@@ -101,11 +101,12 @@ header img {
 
 .messages-container {
 	width: 100%;
-	height: 100%;
+	height: 97%;
 	overflow-y: scroll;
 }
 
 .message {
+	overflow: hidden;
 	font-size: 14px;
 	margin-bottom: 4px;
 }
@@ -162,6 +163,8 @@ footer input {
 	font-size: 18px;
 	border: none;
 }
+
+
 
 footer input::placeholder {
 	color: #000000;
