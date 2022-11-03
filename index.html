@@ -21,7 +21,7 @@
             <img src="./assets/logo.png" alt="">
 
             <button>
-                <ion-icon class="header-icon" name="people"></ion-icon>
+                <ion-icon class="header-icon" name="people" ></ion-icon>
             </button>
         </header>
 
@@ -32,8 +32,8 @@
         </ul>
 
         <footer>
-            <input type="text" placeholder="Escreva aqui...">
-            <button onclick="sendMessage()">
+            <input type="text" placeholder="Escreva aqui..." data-test="input-message">
+            <button onclick="sendMessage()" data-test="send-message">
                 <ion-icon class="send-icon" name="paper-plane-outline"></ion-icon>
             </button>
         </footer>

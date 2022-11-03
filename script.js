@@ -117,7 +117,7 @@ function printMessages() {
         // Filter and post status messages
         if (actualMessage.type === "status") {
             let toPrint = `
-                    <li class="message message-join-left">
+                    <li class="message message-join-left" data-test="message">
                         <p>
                             <span class="message-time">
                                 (${actualMessage.time})
@@ -140,7 +140,7 @@ function printMessages() {
         // Filter and post public messages
         } else if (actualMessage.type === "message") {
             let toPrint = `
-                    <li class="message public-message">
+                    <li class="message public-message" data-test="message">
                         <p>
                             <span class="message-time">
                                 (${actualMessage.time})
@@ -173,7 +173,7 @@ function printMessages() {
             actualMessage.type === "private_message" &&
             actualMessage.to === user
         ) {
-            let toPrint = `<li class="message private-message">
+            let toPrint = `<li class="message private-message" data-test="message">
                         <p>
                             <span class="message-time">
                                 (${actualMessage.time})
